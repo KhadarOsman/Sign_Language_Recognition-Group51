@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>Practice Your Skills</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="skills.css">
+    <link rel="icon" type="image/png" href="../docs/logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body id="load">
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <button class="togglebtn" onClick={this.buttonclicked}> <i class="fas fa-bars"></i></button>
+        </span>
+        <h5><a href="../index.html" class="logo">Sign Language<span>Translator</span></a></h5>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="../index.html" class="nav-links ">Tutorials</a>
+            </li>
+            <li>
+                <a href="./Training.html" class="nav-links">Training</a>
+            </li>
+            <li>
+                <a href="Model.html" class="nav-links orange" style="color: #ff9900;">Test Your Skills</a>
+            </li>
+            <li>
+                <a href="./About.html" class="nav-links ">About</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="alert alert-success">
+        Recommeded to use in a white diagram and plaese show only the hand into camera
+    </div>
+    <script src="skill.js"></script>
+  <div id="container">
+    <button id="startButton">Start Prediction</button>
+    <button id="addButton">Add Letter</button>
+    <button id="clearButton">Clear Last Letter</button>
+    <button id="newLineButton">New Line</button>
+    <button id="copyButton">Copy</button>
+    <button id="spaceButton">Space</button>
+
+  </div>
+  <p id="combinedLetters"></p>
+ 
+    
+</body>
+
+</html>
